@@ -1,0 +1,26 @@
+<component name="libraryTable">
+  <library name="Maven: org.springframework.boot:spring-boot-starter-web:2.2.5.RELEASE">
+    <ANNOTATIONS>
+      <root url="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-web/2.4.0" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-web/2.2.5.RELEASE/spring-boot-starter-web-2.2.5.RELEASE.jar!/" />
+      <root url="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-web/2.4.0" />
+      <root url="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-web/2.4.0" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-web/2.2.5.RELEASE/spring-boot-starter-web-2.2.5.RELEASE-javadoc.jar!/" />
+      <root url="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-web/2.4.0" />
+    </JAVADOC>
+    <NATIVE>
+      <root url="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-web/2.4.0" />
+    </NATIVE>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-web/2.2.5.RELEASE/spring-boot-starter-web-2.2.5.RELEASE-sources.jar!/" />
+      <root url="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-web/2.4.0" />
+      <root url="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-web/2.4.0" />
+    </SOURCES>
+    <jarDirectory url="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-web/2.4.0" recursive="false" />
+    <jarDirectory url="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-web/2.4.0" recursive="false" type="SOURCES" />
+  </library>
+</component>
