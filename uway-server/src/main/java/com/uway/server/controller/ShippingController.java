@@ -3,6 +3,7 @@ package com.uway.server.controller;
 
 import com.uway.server.model.eshipper.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.MediaType;
 import org.springframework.http.RequestEntity;
 import org.springframework.web.bind.annotation.*;
@@ -19,6 +20,12 @@ public class ShippingController {
     @Autowired
     private RestTemplate restTemplate;
 
+    @Value("${eshipper.username}")
+    private String eshipperUser;
+
+    @Value("${eshipper.password}")
+    private String eshipperPass;
+
     @CrossOrigin
     @PostMapping(path = "/api/v1/quote", consumes = MediaType.APPLICATION_XML_VALUE)
     public EShipperResponse getRates(@RequestBody QuoteRequest quoteRequest) {
@@ -28,8 +35,8 @@ public class ShippingController {
 	private EShipperResponse getQuoteRequest(@RequestBody QuoteRequest quoteRequest) {
 		EShipperRequest eshipperRequest = new EShipperRequest();
 		eshipperRequest.setQuoteRequest(quoteRequest);
-		eshipperRequest.setUsername("atayyabi");
-		eshipperRequest.setPassword("admint7102");
+		eshipperRequest.setUsername(eshipperUser);
+		eshipperRequest.setPassword(eshipperPass);
 		eshipperRequest.setVersion("3.0.0");
 
 		RequestEntity<EShipperRequest> payload = RequestEntity.post(eshipperTestUrl)
@@ -62,8 +69,8 @@ public class ShippingController {
 
         EShipperShippingRequest eshipperShippingRequest = new EShipperShippingRequest();
         eshipperShippingRequest.setShippingRequest(shippingRequest1);
-        eshipperShippingRequest.setUsername("atayyabi");
-        eshipperShippingRequest.setPassword("admint7102");
+        eshipperShippingRequest.setUsername(eshipperUser);
+        eshipperShippingRequest.setPassword(eshipperPass);
         eshipperShippingRequest.setVersion("3.0.0");
 
 
